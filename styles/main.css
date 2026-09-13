@@ -41,7 +41,7 @@ body {
 
 .nav-list a:hover {
   transform: scale(1.1);
-  color: rgb(0, 112, 228);
+  color: #375868;
 }
 .nav-list a.active {
   color: rgb(2, 65, 133);

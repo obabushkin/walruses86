@@ -17,6 +17,10 @@ body {
 
 /* Header */
 
+.header {
+  padding: 40px 0;
+}
+
 .logo {
   transition: transform 0.2s ease; /* Плавный переход при изменении */
 }
@@ -54,6 +58,8 @@ body {
 
 /* Main Page */
 
+/* Promo */
+
 .promo {
   display: flex;
   align-items: end;
@@ -83,4 +89,50 @@ body {
 .desc-3 {
   color: red;
   margin-left: 80px;
+}
+
+/* Recent Articles */
+.rec-articles {
+  margin-top: 40px;
+}
+.articles-prev {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.article-prev {
+  padding-left: 15px;
+  width: 370px;
+  height: 277px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-weight: 700;
+  border-radius: 10px;
+  background-image: url("./../img/article-prev-img.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #fff
+}
+
+.prev-title {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.prev-desc {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+a.prev-btn {
+  width: 152px;
+  display: inline-block;
+  color: #fff;
+  padding: 10px 15px;
+  background-color: red;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: 10px;
 }

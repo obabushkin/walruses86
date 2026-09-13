@@ -1,6 +1,9 @@
 @import "./reset.css";
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Manrope", sans-serif;
   line-height: normal;
@@ -11,6 +14,8 @@ body {
   max-width: 1200px;
   padding: 0 15px;
 }
+
+/* Header */
 
 .logo {
   transition: transform 0.2s ease; /* Плавный переход при изменении */
@@ -45,4 +50,37 @@ body {
 }
 .nav-list a.active {
   color: rgb(2, 65, 133);
+}
+
+/* Main Page */
+
+.promo {
+  display: flex;
+  align-items: end;
+  padding-left: 70px;
+  height: 900px;
+  border-radius: 90px;
+  background-image: url("./../img/promo-bg.jpg");
+  background-color: #3b6a54;
+  background-position: center;
+  background-size: cover;
+}
+
+.desc {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.desc-1 {
+  color: #fff;
+}
+
+.desc-2 {
+  color: blue;
+  margin-left: 40px;
+}
+
+.desc-3 {
+  color: red;
+  margin-left: 80px;
 }

@@ -261,3 +261,9 @@ a.social-link {
     font-size: 38px;
   }
 }
+
+.footer {
+  padding: 20px 0;
+  background-color: #163b4a;
+  color: white;
+}

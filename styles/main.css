@@ -113,7 +113,7 @@ body {
   background-image: url("./../img/article-prev-img.jpg");
   background-position: center;
   background-size: cover;
-  color: #fff
+  color: #fff;
 }
 
 .prev-title {
@@ -135,4 +135,129 @@ a.prev-btn {
   border-radius: 10px;
   margin-left: auto;
   margin-right: 10px;
+}
+
+/* Contacts */
+
+.contacts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 440px;
+  margin: 40px 0;
+  overflow: hidden;
+  border-radius: 32px;
+  background-color: #fff;
+}
+
+.contacts-map iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 440px;
+}
+
+.contacts-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 56px 64px;
+  text-align: right;
+}
+
+.contacts-label {
+  color: #55727f;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.contacts-title {
+  margin: 10px 0 36px;
+  color: #163b4a;
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.contacts-link {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 14px;
+  width: max-content;
+  color: #163b4a;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+.contact-value {
+  white-space: nowrap;
+}
+
+.contact-icon {
+  flex: 0 0 24px;
+  width: 24px;
+  height: 24px;
+}
+
+.contacts-link:hover,
+.social-link:hover {
+  color: #2a718d;
+}
+
+a.social-link {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  margin-top: 36px;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 50%;
+  background-color: #0077ff;
+  color: #fff;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.social-link img {
+  width: 28px;
+}
+
+.social-link:hover {
+  background-color: #0068df;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 760px) {
+  .contacts {
+    grid-template-columns: 1fr;
+    border-radius: 24px;
+  }
+
+  .contacts-map iframe {
+    height: 320px;
+    min-height: 0;
+  }
+
+  .contacts-info {
+    padding: 40px 28px;
+  }
+
+  .contacts-title {
+    font-size: 38px;
+  }
 }

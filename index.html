@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Моржи Нефтеюганска</title>
+  <link rel="stylesheet" href="./styles/reset.css">
   <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
@@ -14,7 +15,7 @@
         <ul class="nav-list">
           <li><a href="index.html#promo">Это Мы</a></li>
           <li><a href="index.html#rec-articles">Статьи</a></li>
-          <li><a href="#">Карта</a></li>
+          <li><a href="index.html#contacts">Контакты</a></li>
         </ul>
       </nav>
     </div>
@@ -46,7 +47,37 @@
           </div>
         </div>
       </section>
-      <section class="map"></section>
+      <section class="contacts" id="contacts" aria-labelledby="contacts-title">
+        <div class="contacts-map">
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?ll=72.691036%2C61.088866&z=12"
+            title="Карта Нефтеюганска"
+            loading="lazy"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="contacts-info">
+          <p class="contacts-label">Клуб моржей Нефтеюганска</p>
+          <h1 class="contacts-title" id="contacts-title">Контакты</h1>
+          <address class="contacts-list">
+            <a class="contacts-link" href="tel:+79999999999">
+              <img class="contact-icon" src="./img/phone.svg" alt="">
+              <span class="contact-value">+7 999 999-99-99</span>
+            </a>
+            <a class="contacts-link" href="mailto:obabushkin@outlook.ru">
+              <img class="contact-icon" src="./img/email.svg" alt="">
+              <span>obabushkin@outlook.ru</span>
+            </a>
+            <a class="contacts-link" href="mailto:obabushkin@outlook.ru">
+              <img class="contact-icon" src="./img/map.svg" alt="">
+              <span>Нефтеюганск, Голубое озеро, возле кафе "Круиз"</span>
+            </a>
+          </address>
+          <a class="social-link" href=https://vk.ru/morzhi86" target="_blank" rel="noopener noreferrer" aria-label="Мы во ВКонтакте">
+            <img  src="./img/vk.svg" alt="">
+          </a>
+        </div>
+      </section>
     </div>
   </main>
   <footer></footer>
